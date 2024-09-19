@@ -5,12 +5,12 @@ public class Main {
             System.out.println("No se han introducido opciones");
         } 
         // Si se introduce text
-        else if (args[0].toString().toLowerCase().equals("text")){
-            TextInput.execute();
+        else if (args[0].equalsIgnoreCase("text")){
+            TextFile.execute();
         }
         // Si se introduce binary 
-        else if (args[0].toString().toLowerCase().equals("binary")) {
-
+        else if (args[0].equalsIgnoreCase("binary")) {
+            BinaryFile.execute();
         }
         System.exit(0);
     }    
