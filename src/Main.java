@@ -12,6 +12,10 @@ public class Main {
         else if (args[0].equalsIgnoreCase("binary")) {
             BinaryFile.execute();
         }
+        // Si se introduce image
+        else if (args[0].equalsIgnoreCase("image")) {
+            ImageFile.execute();
+        }
         System.exit(0);
     }    
 }
